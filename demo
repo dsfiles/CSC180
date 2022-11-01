@@ -12,9 +12,15 @@ while (index < 4)
     index++;
 }
 
-Console.WriteLine("Count2");
-int[] count2 = count;
+int[] count2 = new int[4]; 
 for (int i = 0; i < 4; i++)
 {
-    Console.WriteLine(count2[i]);
+    count2[i]=count[i];
+}
+
+count[0] = 99;
+Console.WriteLine("Count2");
+for (int i = 0; i < 4; i++)
+{
+    Console.WriteLine(  count2[i] );
 }
